@@ -1,42 +1,42 @@
-#CRYPTO WALLET PERFORMANCE
+# CRYPTO WALLET PERFORMANCE
 
-##Objective
+## Objective
 Your assignment is to implement a Java program that given a collection of crypto assets
 with their positions, it must retrieve, concurrently, their latest prices from the Coincap
 API and return the updated total financial value of the wallet with performance data.
 
-###Input
+### Input
 CSV file representing the wallet with columns symbol, quantity, price
-###Output
+### Output
 Print a line with
 total={},best_asset={},best_performance={},worst_asset={},worst_performance=
 {}
 
-##Execute Project
+## Execute Project
 
-###Required environment, tools and languages:
+### Required environment, tools and languages:
 - Java 11+
 - maven 3.6.3
 
-###Build Project
+### Build Project
 mvn clean install
 
-###Tests
+### Tests
 mvn test
 
-###Run Project
+### Run Project
 mvn spring-boot:run
 
-###Configure Assets
+### Configure Assets
 The cryptoAssets.csv file could be change for more tests.
 
-####For Production
+#### For Production
 src/main/resources/cryptoAssets.csv
 symbol,quantity,price
 BTC,0.12345,37870.5058
 ETH,4.89532,2004.9774
 
-####For Tests
+#### For Tests
 src/test/resources/cryptoAssets.csv
 
 symbol,quantity,price
